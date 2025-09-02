@@ -1,0 +1,7 @@
+{
+  "service_name": "The name of the service",
+  "project_slug": "{{ cookiecutter.service_name.lower().replace(' ', '_') }}",
+  "aws_region": "us-east-2",
+  "github_owner": "InfluenceLabs",
+  "github_repo": "The repo name for the service"
+}
