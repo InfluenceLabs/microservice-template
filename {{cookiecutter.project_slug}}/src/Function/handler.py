@@ -1,6 +1,8 @@
 import json
-def handler(event, context):
-    # Log the event argument for debugging and for use in local development.
-    print(json.dumps(event))
 
-    return {}
+def lambda_handler(event, context):
+    name = event.get("name", "World")
+    return {
+        "statusCode": 200,
+        "body": json.dumps({"message": f"Hello, {name}!"})
+    }
